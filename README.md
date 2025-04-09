@@ -1,27 +1,56 @@
-# NullPointer_TercerSemestre
-# Descripción
-Este repositorio pertenece al equipo Null Pointer de la UTN, donde estudiamos programación. Aquí centralizamos y compartimos recursos, ejercicios, prácticas, y cualquier material relacionado con nuestro aprendizaje y desarrollo en programación.
+# 💻 Null Pointer - Repositorio Oficial | Tercer Semestre
 
-# Objetivo del Repositorio
-El objetivo de este repositorio es facilitar la colaboración y el intercambio de conocimiento entre los miembros del equipo Null Pointer. Todos los integrantes pueden contribuir con su trabajo, aportar ideas, y aprender de las contribuciones de los demás.
+## 🌟 Bienvenidos al nuevo nivel
 
-# Integrantes:
-° Cristian Gimenez 👨‍💻
+Este repositorio marca el comienzo de una nueva etapa para el equipo **Null Pointer**, estudiantes de la UTN comprometidos con el desarrollo, la lógica y las buenas prácticas en programación.  
+Después de dos semestres de aprendizaje y trabajo en equipo, iniciamos el **tercer semestre** con más experiencia, más desafíos… y muchas más ganas.
 
-° Bestabé Gutierrez
+---
 
-° Santiago Martos
+## 🎯 ¿Qué encontrarás acá?
 
-° Mauro Ulloa
+Un espacio compartido donde cada integrante del equipo puede:
 
-° Sofia Torres
+- Subir prácticas, desafíos y proyectos del semestre.
+- Colaborar en código grupal.
+- Comentar y aportar mejoras en los aportes de los demás.
+- Dejar documentado nuestro avance como programadores.
 
-° Victoria Galdona
+Este repositorio no es solo código. Es también:
 
-° Axel Arrieta
+- Ideas.
+- Aprendizajes.
+- Errores que nos enseñaron.
+- Y líneas que escribimos con pasión por la tecnología.
 
-° Valentin Rinckeisen
+---
 
-° Quiles Horacio
+## 🤝 Objetivo del Repositorio
 
-° Juan Vera
+Fomentar el **trabajo colaborativo**, la **organización de contenidos** y el **crecimiento conjunto**.  
+Sabemos que programar es más que resolver ejercicios: es pensar en equipo, compartir dudas, y celebrar los logros (por pequeños que parezcan).
+
+---
+
+## 🧠 Nuestro equipo - Null Pointer
+
+El verdadero valor está en las personas detrás del código:
+
+- 👨‍💻 Cristian Gimenez  
+- Bestabé Gutierrez  
+- Santiago Martos  
+- Mauro Ulloa  
+- Sofia Torres  
+- Victoria Galdona  
+- Axel Arrieta  
+- Valentín Rinckeisen  
+- Quiles Horacio  
+- Juan Vera
+
+---
+
+## 🚀 ¡Seguimos aprendiendo!
+
+Gracias por pasar por este espacio.  
+Si sos parte del equipo, ¡subí, comentá y mejorá!  
+Si sos visitante, ojalá algo de lo que encuentres acá te sirva tanto como a nosotros al construirlo.
