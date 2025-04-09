@@ -7,12 +7,21 @@ El objetivo de este repositorio es facilitar la colaboración y el intercambio d
 
 # Integrantes:
 ° Cristian Gimenez 👨‍💻
+
 ° Bestabé Gutierrez
+
 ° Santiago Martos
+
 ° Mauro Ulloa
+
 ° Sofia Torres
+
 ° Victoria Galdona
+
 ° Axel Arrieta
+
 ° Valentin Rinckeisen
+
 ° Quiles Horacio
+
 ° Juan Vera
