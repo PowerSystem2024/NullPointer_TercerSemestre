@@ -30,7 +30,7 @@ class Persona:
         return self._nombre
 
     @nombre.setter
-    def id_persona(self, nombre):
+    def nombre(self, nombre):
         self._nombre = nombre
 
     @property
