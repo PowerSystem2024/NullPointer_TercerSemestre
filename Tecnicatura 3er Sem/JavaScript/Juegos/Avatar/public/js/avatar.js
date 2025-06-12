@@ -75,6 +75,35 @@ function ataqueAleatorioEnemigo(){//Ahora ocupando la variable global nueva le d
     } else {
         ataqueEnemigo = 'Barrida'
     }
+    combate()  // Ahora se ejecuta el combate luego de elegir ataque enemigo
 }
 
-window.addEventListener('load', iniciarJuego)
+function combate(){
+    let resultado = ""
+
+    if(ataqueEnemigo === ataqueJugador){
+        resultado = "EMPATE"
+    } else if(ataqueJugador === 'Puño' && ataqueEnemigo === 'Barrida'){
+        resultado = "GANASTE"
+    } else if(ataqueJugador === 'Patada' && ataqueEnemigo === 'Puño'){
+        resultado = "GANASTE"
+    } else if(ataqueJugador === 'Barrida' && ataqueEnemigo === 'Patada'){
+        resultado = "GANASTE"
+    } else {
+        resultado = "PERDISTE"
+    }
+
+    crearMensaje(resultado)
+}
+
+function crearMensaje(resultado){
+    let sectionMensaje = document.getElementById('mensajes')
+    let parrafo = document.createElement('p')
+
+    parrafo.innerHTML = `Tu personaje atacó con <strong>${ataqueJugador}</strong>, el personaje del enemigo atacó con <strong>${ataqueEnemigo}</strong> → <strong>${resultado}</strong>`
+    sectionMensaje.appendChild(parrafo)
+}
+
+function aleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
