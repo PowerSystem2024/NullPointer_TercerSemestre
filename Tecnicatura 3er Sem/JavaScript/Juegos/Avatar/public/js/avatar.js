@@ -1,9 +1,17 @@
 let ataqueJugador
 let ataqueEnemigo
+let vidasJugador = 3 
+let vidasEnemigo = 3
 
 function iniciarJuego(){
+    let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
+    sectionSeleccionarAtaque.style.display = 'none'
+
     let botonPersonajeJugador = document.getElementById('boton-personaje');
     botonPersonajeJugador.addEventListener('click', seleccionarPersonajeJugador);
+
+    let sectionReiniciar = document.getElementById('reiniciar')
+    sectionReiniciar.style.display = 'none'
 
     let botonPunio = document.getElementById('boton-punio') 
     botonPunio.addEventListener('click', ataquePunio)
@@ -11,6 +19,9 @@ function iniciarJuego(){
     botonPatada.addEventListener('click', ataquePatada)
     let botonBarrida = document.getElementById('boton-barrida')
     botonBarrida.addEventListener('click', ataqueBarrida)
+    //creamos una nueva variable
+    //let botonReiniciar = document.getElementById('boton-reiniciar')
+    //botonReiniciar.addEventListener('click', reiniciarJuego())
 }
 
 function seleccionarPersonajeJugador(){
@@ -18,8 +29,12 @@ function seleccionarPersonajeJugador(){
     let inputKatara = document.getElementById('katara')
     let inputAang = document.getElementById('aang')
     let inputToph = document.getElementById('toph')
-
     let spanPersonajeJugador = document.getElementById('personaje-jugador')
+
+    
+    let sectionSeleccionarPersonaje = document.getElementById('seleccionar-personaje')
+    
+    let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque') 
 
     if(inputZuko.checked){
         spanPersonajeJugador.innerHTML = 'Zuko'
@@ -30,10 +45,14 @@ function seleccionarPersonajeJugador(){
     }else if(inputToph.checked){
         spanPersonajeJugador.innerHTML = 'Toph'
     }else{
-        alert('Selecciona un personaje')
-        return
+        return // Esto detendrá la ejecución de la función si no hay personaje seleccionado.
     }
     
+    // Si se seleccionó un personaje, entonces procedemos a ocultar la sección de selección
+    // y mostrar la sección de ataque.
+    sectionSeleccionarPersonaje.style.display = 'none' //
+    sectionSeleccionarAtaque.style.display = 'block' //
+
     seleccionarPersonajeEnemigo();
 }
 
@@ -43,7 +62,7 @@ function seleccionarPersonajeEnemigo() {
 
     let spanPersonajeEnemigo = document.getElementById('personaje-enemigo');
     spanPersonajeEnemigo.innerHTML = personajes[indiceAleatorio]; 
-    }
+}
 
 function ataquePunio(){ //Modificamos la variable global ataqueJugador
     ataqueJugador = 'Punio'
@@ -75,35 +94,76 @@ function ataqueAleatorioEnemigo(){//Ahora ocupando la variable global nueva le d
     } else {
         ataqueEnemigo = 'Barrida'
     }
-    combate()  // Ahora se ejecuta el combate luego de elegir ataque enemigo
+    combate()
 }
 
 function combate(){
-    let resultado = ""
+    let spanVidasJugador = document.getElementById('vidas-jugador')
+    let spanVidasEnemigo = document.getElementById('vidas-enemigo')
 
-    if(ataqueEnemigo === ataqueJugador){
-        resultado = "EMPATE"
-    } else if(ataqueJugador === 'Puño' && ataqueEnemigo === 'Barrida'){
-        resultado = "GANASTE"
-    } else if(ataqueJugador === 'Patada' && ataqueEnemigo === 'Puño'){
-        resultado = "GANASTE"
-    } else if(ataqueJugador === 'Barrida' && ataqueEnemigo === 'Patada'){
-        resultado = "GANASTE"
+    //Combate
+    if(ataqueEnemigo == ataqueJugador){
+        crearMensaje("EMPATE!!!")
+    } else if(ataqueJugador == 'Punio' && ataqueEnemigo == 'Barrida'){
+        crearMensaje("GANASTE!!!")
+        vidasEnemigo--
+        spanVidasEnemigo.innerHTML = vidasEnemigo
+    } else if(ataqueJugador == 'Patada' && ataqueEnemigo == 'Punio'){
+        crearMensaje("GANASTE!!!")
+        vidasEnemigo--
+        spanVidasEnemigo.innerHTML = vidasEnemigo
+    } else if(ataqueJugador == 'Barrida' && ataqueEnemigo == 'Patada'){
+        crearMensaje("GANASTE!!!")
+        vidasEnemigo--
+        spanVidasEnemigo.innerHTML = vidasEnemigo
     } else {
-        resultado = "PERDISTE"
+        crearMensaje("PERDISTE!!!")
+        vidasJugador--
+        spanVidasJugador.innerHTML = vidasJugador
     }
+    //Revisar vidas
+    revisarVidas() 
+}
 
-    crearMensaje(resultado)
+function revisarVidas(){
+    if(vidasEnemigo == 0){
+        //Ganamos
+        crearMensajeFinal('FELICITACIONES!!! HAS GANADO')
+    } else if(vidasJugador == 0){
+        //Perdimos
+        crearMensajeFinal('QUE PENA, HAS PERDIDO')
+    }
+}
+
+function crearMensajeFinal(resultado){
+    let sectionReiniciar = document.getElementById('reiniciar')
+    sectionReiniciar.style.display = 'block'
+
+    let sectionMensaje = document.getElementById('mensajes')
+    let parrafo = document.createElement('p')
+
+    parrafo.innerHTML = resultado
+
+    sectionMensaje.appendChild(parrafo)
+    let botonPunio = document.getElementById('boton-punio') 
+    botonPunio.disabled = true
+    let botonPatada = document.getElementById('boton-patada')
+    botonPatada.disabled = true
+    let botonBarrida = document.getElementById('boton-barrida')
+    botonBarrida.disabled = true
 }
 
 function crearMensaje(resultado){
     let sectionMensaje = document.getElementById('mensajes')
     let parrafo = document.createElement('p')
 
-    parrafo.innerHTML = `Tu personaje atacó con <strong>${ataqueJugador}</strong>, el personaje del enemigo atacó con <strong>${ataqueEnemigo}</strong> → <strong>${resultado}</strong>`
+    parrafo.innerHTML = 'Tu personaje ataco con ' + ataqueJugador + ', el personaje del enemigo ataco con ' + ataqueEnemigo + ' ' + resultado
+
     sectionMensaje.appendChild(parrafo)
 }
 
-function aleatorio(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+//function reiniciarJuego(){
+//    location.reload()
+//}
+
+window.addEventListener('load', iniciarJuego)
