@@ -1,0 +1,394 @@
+02:10:10 PM:DEBUG [SGPersonal.py:25] Conexión Exitosa: <connection object at 0x000001AFEDA03780; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+02:10:10 PM:DEBUG [SGPersonal.py:38] Se abrio correctamente el cursor: <cursor object at 0x000001AFEDA87840; closed: 0>
+02:10:10 PM:INFO [MainApp.py:61] Tabla 'tasks' creada o ya existente.
+02:11:06 PM:ERROR [TipoTarea.py:70] Error al insertar tarea: cursor already closed
+02:12:57 PM:ERROR [TipoTarea.py:70] Error al insertar tarea: cursor already closed
+02:13:01 PM:ERROR [TipoTarea.py:40] Error al seleccionar tareas: cursor already closed
+02:13:01 PM:INFO [MainApp.py:83] No hay tareas para mostrar.
+02:13:08 PM:ERROR [TipoTarea.py:40] Error al seleccionar tareas: cursor already closed
+02:13:08 PM:INFO [MainApp.py:92] No hay tareas pendientes.
+02:13:28 PM:ERROR [TipoTarea.py:70] Error al insertar tarea: cursor already closed
+02:43:36 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x00000277C1ABB780; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+02:43:36 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x00000277C1B37840; closed: 0>
+02:43:36 PM:INFO [MainApp.py:59] Tabla 'tarea' creada o ya existente.
+02:43:57 PM:ERROR [TipoTarea.py:70] Error al insertar tarea: cursor already closed
+02:37:44 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x000001A4AA383890; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+02:37:44 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x000001A4AA3F3840; closed: 0>
+02:37:44 PM:INFO [MainApp.py:59] Tabla 'tarea' creada o ya existente.
+02:38:04 PM:ERROR [TipoTarea.py:70] Error al insertar tarea: cursor already closed
+02:40:26 PM:ERROR [TipoTarea.py:40] Error al seleccionar tareas: cursor already closed
+02:41:29 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x00000258B3A23780; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+02:41:29 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x00000258B3AB7840; closed: 0>
+02:41:29 PM:INFO [MainApp.py:81] No hay tareas para mostrar.
+02:41:43 PM:DEBUG [TipoTarea.py:67] Tarea Insertada: 
+            Id Tarea: None,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-19,
+            Estado: pendiente
+        
+02:43:00 PM:DEBUG [TipoTarea.py:67] Tarea Insertada: 
+            Id Tarea: None,
+            Descripción: Hacer la cama,
+            Fecha Límite: None,
+            Estado: pendiente
+        
+02:43:11 PM:ERROR [TipoTarea.py:40] Error al seleccionar tareas: error de sintaxis en o cerca de «WHERE»
+LINE 1: ...cription, due_date, status FROM tasks ORDER BY id WHERE stat...
+                                                             ^
+
+02:43:11 PM:INFO [MainApp.py:90] No hay tareas pendientes.
+02:43:39 PM:ERROR [TipoTarea.py:40] Error al seleccionar tareas: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+
+02:43:39 PM:INFO [MainApp.py:81] No hay tareas para mostrar.
+02:43:52 PM:ERROR [TipoTarea.py:121] Error al eliminar tarea: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+
+02:44:05 PM:INFO [MainApp.py:122] ¡Chau!
+02:49:38 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x000001E02AE2F560; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+02:49:38 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x000001E02AEA3840; closed: 0>
+02:49:59 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x00000261479988C0; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+02:49:59 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x0000026147988BA0; closed: 0>
+02:49:59 PM:DEBUG [TipoTarea.py:68] Tarea Insertada: 
+            Id Tarea: 3,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-18,
+            Estado: pendiente
+        
+02:50:08 PM:INFO [MainApp.py:81] No hay tareas para mostrar.
+02:50:13 PM:ERROR [TipoTarea.py:40] Error al seleccionar tareas: error de sintaxis en o cerca de «WHERE»
+LINE 1: ...cription, due_date, status FROM tasks ORDER BY id WHERE stat...
+                                                             ^
+
+02:50:13 PM:INFO [MainApp.py:90] No hay tareas pendientes.
+02:50:23 PM:ERROR [TipoTarea.py:40] Error al seleccionar tareas: error de sintaxis en o cerca de «WHERE»
+LINE 1: ...cription, due_date, status FROM tasks ORDER BY id WHERE stat...
+                                                             ^
+
+02:50:23 PM:INFO [MainApp.py:99] No hay tareas completadas.
+02:50:28 PM:ERROR [TipoTarea.py:97] Error al actualizar tarea: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+
+02:50:36 PM:DEBUG [TipoTarea.py:120] Tarea eliminada: 
+            Id Tarea: 3,
+            Descripción: None,
+            Fecha Límite: None,
+            Estado: None
+        
+02:55:39 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x00000276D8D43780; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+02:55:39 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x00000276D8DD7840; closed: 0>
+02:55:39 PM:INFO [MainApp.py:83] 
+--- Todas las Tareas ---
+02:55:39 PM:INFO [MainApp.py:85] 
+            Id Tarea: 1,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-19,
+            Estado: None
+        
+02:55:39 PM:INFO [MainApp.py:85] 
+            Id Tarea: 2,
+            Descripción: Hacer la cama,
+            Fecha Límite: None,
+            Estado: None
+        
+02:55:39 PM:INFO [MainApp.py:86] --------------------------
+02:56:02 PM:ERROR [TipoTarea.py:40] Error al seleccionar tareas: error de sintaxis en o cerca de «WHERE»
+LINE 1: ...cription, due_date, status FROM tasks ORDER BY id WHERE stat...
+                                                             ^
+
+02:56:02 PM:INFO [MainApp.py:90] No hay tareas pendientes.
+02:58:53 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x000002B68B5B3780; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+02:58:53 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x000002B68B647840; closed: 0>
+02:58:53 PM:INFO [MainApp.py:90] No hay tareas pendientes.
+02:59:02 PM:INFO [MainApp.py:83] 
+--- Todas las Tareas ---
+02:59:02 PM:INFO [MainApp.py:85] 
+            Id Tarea: 1,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-19,
+            Estado: None
+        
+02:59:02 PM:INFO [MainApp.py:85] 
+            Id Tarea: 2,
+            Descripción: Hacer la cama,
+            Fecha Límite: None,
+            Estado: None
+        
+02:59:02 PM:INFO [MainApp.py:86] --------------------------
+02:59:22 PM:DEBUG [TipoTarea.py:120] Tarea eliminada: 
+            Id Tarea: 1,
+            Descripción: None,
+            Fecha Límite: None,
+            Estado: None
+        
+02:59:29 PM:DEBUG [TipoTarea.py:120] Tarea eliminada: 
+            Id Tarea: 2,
+            Descripción: None,
+            Fecha Límite: None,
+            Estado: None
+        
+02:59:35 PM:INFO [MainApp.py:99] No hay tareas completadas.
+02:59:43 PM:DEBUG [TipoTarea.py:95] Tarea actualizada: 
+            Id Tarea: 1,
+            Descripción: None,
+            Fecha Límite: None,
+            Estado: completada
+        
+02:59:51 PM:DEBUG [TipoTarea.py:120] Tarea eliminada: 
+            Id Tarea: 1,
+            Descripción: None,
+            Fecha Límite: None,
+            Estado: None
+        
+03:00:29 PM:DEBUG [TipoTarea.py:68] Tarea Insertada: 
+            Id Tarea: 4,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-18,
+            Estado: pendiente
+        
+03:00:36 PM:INFO [MainApp.py:83] 
+--- Todas las Tareas ---
+03:00:36 PM:INFO [MainApp.py:85] 
+            Id Tarea: 4,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-18,
+            Estado: pendiente
+        
+03:00:36 PM:INFO [MainApp.py:86] --------------------------
+03:00:41 PM:INFO [MainApp.py:92] 
+--- Tareas Pendientes ---
+03:00:41 PM:INFO [MainApp.py:94] 
+            Id Tarea: 4,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-18,
+            Estado: pendiente
+        
+03:00:41 PM:INFO [MainApp.py:95] --------------------------
+03:00:49 PM:INFO [MainApp.py:99] No hay tareas completadas.
+03:00:55 PM:ERROR [TipoTarea.py:97] Error al actualizar tarea: el valor nulo en la columna «description» de la relación «tasks» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (4, null, null, completada).
+
+03:11:15 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x000001DB60C43780; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+03:11:15 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x000001DB60CD7840; closed: 0>
+03:11:15 PM:INFO [MainApp.py:92] 
+--- Tareas Pendientes ---
+03:11:15 PM:INFO [MainApp.py:94] 
+            Id Tarea: 4,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-18,
+            Estado: pendiente
+        
+03:11:15 PM:INFO [MainApp.py:95] --------------------------
+03:11:21 PM:INFO [MainApp.py:99] No hay tareas completadas.
+03:11:28 PM:ERROR [TipoTarea.py:40] Error al seleccionar tareas: el operador no existe: character varying = integer
+LINE 1: ...ription, due_date, status FROM tasks WHERE status = 4 ORDER ...
+                                                             ^
+HINT:  Ningún operador coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+
+03:11:28 PM:WARNING [MainApp.py:117] No se encontró ninguna tarea con ID 4.
+03:33:33 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x00000175B73E3780; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+03:33:33 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x00000175B7477920; closed: 0>
+03:33:33 PM:INFO [MainApp.py:82] 
+--- Todas las Tareas ---
+03:33:33 PM:INFO [MainApp.py:84] 
+            Id Tarea: 4,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-18,
+            Estado: pendiente
+        
+03:33:33 PM:INFO [MainApp.py:85] --------------------------
+03:33:42 PM:INFO [MainApp.py:91] 
+--- Tareas Pendientes ---
+03:33:42 PM:INFO [MainApp.py:93] 
+            Id Tarea: 4,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-18,
+            Estado: pendiente
+        
+03:33:42 PM:INFO [MainApp.py:94] --------------------------
+03:33:47 PM:INFO [MainApp.py:98] No hay tareas completadas.
+03:33:51 PM:DEBUG [TipoTarea.py:120] Tarea actualizada: 
+            Id Tarea: 4,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-18,
+            Estado: completada
+        
+03:33:51 PM:INFO [MainApp.py:113] Tarea con ID 4 marcada como completada.
+03:33:58 PM:INFO [MainApp.py:89] No hay tareas pendientes.
+03:34:00 PM:INFO [MainApp.py:100] 
+--- Tareas Completadas ---
+03:34:00 PM:INFO [MainApp.py:102] 
+            Id Tarea: 4,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-18,
+            Estado: completada
+        
+03:34:00 PM:INFO [MainApp.py:103] --------------------------
+03:34:08 PM:INFO [MainApp.py:131] ¡Chau!
+02:30:11 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x0000019B48F23780; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+02:30:11 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x0000019B48FB7920; closed: 0>
+02:30:11 PM:INFO [MainApp.py:82] 
+--- Todas las Tareas ---
+02:30:11 PM:INFO [MainApp.py:84] 
+            Id Tarea: 4,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-18,
+            Estado: completada
+        
+02:30:11 PM:INFO [MainApp.py:85] --------------------------
+02:30:54 PM:DEBUG [TipoTarea.py:93] Tarea Insertada: 
+            Id Tarea: 5,
+            Descripción: Presentar informe python,
+            Fecha Límite: 2025-06-23,
+            Estado: pendiente
+        
+02:31:08 PM:INFO [MainApp.py:91] 
+--- Tareas Pendientes ---
+02:31:08 PM:INFO [MainApp.py:93] 
+            Id Tarea: 5,
+            Descripción: Presentar informe python,
+            Fecha Límite: 2025-06-23,
+            Estado: pendiente
+        
+02:31:08 PM:INFO [MainApp.py:94] --------------------------
+02:31:24 PM:INFO [MainApp.py:100] 
+--- Tareas Completadas ---
+02:31:24 PM:INFO [MainApp.py:102] 
+            Id Tarea: 4,
+            Descripción: Hacer la cama,
+            Fecha Límite: 2025-06-18,
+            Estado: completada
+        
+02:31:24 PM:INFO [MainApp.py:103] --------------------------
+02:31:36 PM:DEBUG [TipoTarea.py:120] Tarea actualizada: 
+            Id Tarea: 5,
+            Descripción: Presentar informe python,
+            Fecha Límite: 2025-06-23,
+            Estado: completada
+        
+02:31:36 PM:INFO [MainApp.py:113] Tarea con ID 5 marcada como completada.
+02:31:49 PM:DEBUG [TipoTarea.py:145] Tarea eliminada: 
+            Id Tarea: 4,
+            Descripción: None,
+            Fecha Límite: None,
+            Estado: None
+        
+02:31:49 PM:INFO [MainApp.py:125] Tarea con ID 4 eliminada correctamente
+02:31:59 PM:INFO [MainApp.py:131] ¡Chau!
+03:08:37 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x0000021ABBF239A0; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+03:08:37 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x0000021ABBF97920; closed: 0>
+03:08:37 PM:INFO [MainApp.py:58] Tabla 'tarea' creada o ya existente.
+03:09:17 PM:ERROR [TipoTarea.py:96] Error al insertar tarea: cursor already closed
+03:09:50 PM:ERROR [TipoTarea.py:96] Error al insertar tarea: cursor already closed
+03:16:27 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x000001E531EA39A0; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+03:16:27 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x000001E531F17920; closed: 0>
+03:16:27 PM:INFO [MainApp.py:58] Tabla 'tarea' creada o ya existente.
+03:17:04 PM:ERROR [TipoTarea.py:96] Error al insertar tarea: cursor already closed
+03:17:24 PM:ERROR [TipoTarea.py:96] Error al insertar tarea: cursor already closed
+03:17:48 PM:ERROR [TipoTarea.py:96] Error al insertar tarea: cursor already closed
+03:18:24 PM:ERROR [TipoTarea.py:96] Error al insertar tarea: cursor already closed
+03:18:56 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x000002C91432B560; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+03:18:56 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x000002C914393920; closed: 0>
+03:18:56 PM:DEBUG [TipoTarea.py:159] 
+            Id Tarea: 5,
+            Descripción: Presentar informe python,
+            Fecha Límite: 2025-06-23,
+            Estado: completada
+        
+03:19:19 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x00000202BCFF8AE0; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+03:19:19 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x00000202BCFDCC80; closed: 0>
+03:19:19 PM:DEBUG [TipoTarea.py:93] Tarea Insertada: 
+            Id Tarea: 6,
+            Descripción: hola,
+            Fecha Límite: 2025-06-23,
+            Estado: pendiente
+        
+03:19:30 PM:DEBUG [TipoTarea.py:145] Tarea eliminada: 
+            Id Tarea: 6,
+            Descripción: None,
+            Fecha Límite: None,
+            Estado: None
+        
+03:19:30 PM:INFO [MainApp.py:125] Tarea con ID 6 eliminada correctamente
+03:19:45 PM:INFO [MainApp.py:131] ¡Chau!
+03:21:20 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x000002AE441B39A0; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+03:21:20 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x000002AE44227920; closed: 0>
+03:21:20 PM:INFO [MainApp.py:58] Tabla 'tarea' creada o ya existente.
+03:22:04 PM:ERROR [TipoTarea.py:96] Error al insertar tarea: cursor already closed
+03:22:18 PM:ERROR [TipoTarea.py:96] Error al insertar tarea: cursor already closed
+03:22:27 PM:INFO [MainApp.py:131] ¡Chau!
+03:22:46 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x00000206F47F8AE0; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+03:22:46 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x00000206F47DCC80; closed: 0>
+03:22:46 PM:DEBUG [TipoTarea.py:93] Tarea Insertada: 
+            Id Tarea: 7,
+            Descripción: hacer proyecto,
+            Fecha Límite: 2025-06-30,
+            Estado: pendiente
+        
+03:23:01 PM:DEBUG [TipoTarea.py:145] Tarea eliminada: 
+            Id Tarea: 7,
+            Descripción: None,
+            Fecha Límite: None,
+            Estado: None
+        
+03:23:01 PM:INFO [MainApp.py:125] Tarea con ID 7 eliminada correctamente
+03:23:06 PM:INFO [MainApp.py:131] ¡Chau!
+03:24:11 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x00000231415639A0; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+03:24:11 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x00000231415D7920; closed: 0>
+03:24:11 PM:INFO [MainApp.py:58] Tabla 'tarea' creada o ya existente.
+03:24:36 PM:ERROR [TipoTarea.py:96] Error al insertar tarea: cursor already closed
+03:24:58 PM:ERROR [TipoTarea.py:96] Error al insertar tarea: cursor already closed
+03:26:27 PM:INFO [MainApp.py:131] ¡Chau!
+03:28:43 PM:DEBUG [SGPersonal.py:24] Conexión Exitosa: <connection object at 0x0000016920F38AE0; dsn: 'user=postgres password=xxx dbname=SGPersonal host=127.0.0.1 port=5432', closed: 0>
+03:28:43 PM:DEBUG [SGPersonal.py:37] Se abrio correctamente el cursor: <cursor object at 0x0000016920F1CC80; closed: 0>
+03:28:43 PM:DEBUG [TipoTarea.py:93] Tarea Insertada: 
+            Id Tarea: 8,
+            Descripción: Hacer proyecto integrador python,
+            Fecha Límite: 2025-06-30,
+            Estado: pendiente
+        
+03:29:04 PM:INFO [MainApp.py:82] 
+--- Todas las Tareas ---
+03:29:04 PM:INFO [MainApp.py:84] 
+            Id Tarea: 5,
+            Descripción: Presentar informe python,
+            Fecha Límite: 2025-06-23,
+            Estado: completada
+        
+03:29:04 PM:INFO [MainApp.py:84] 
+            Id Tarea: 8,
+            Descripción: Hacer proyecto integrador python,
+            Fecha Límite: 2025-06-30,
+            Estado: pendiente
+        
+03:29:04 PM:INFO [MainApp.py:85] --------------------------
+03:29:24 PM:INFO [MainApp.py:91] 
+--- Tareas Pendientes ---
+03:29:24 PM:INFO [MainApp.py:93] 
+            Id Tarea: 8,
+            Descripción: Hacer proyecto integrador python,
+            Fecha Límite: 2025-06-30,
+            Estado: pendiente
+        
+03:29:24 PM:INFO [MainApp.py:94] --------------------------
+03:29:35 PM:INFO [MainApp.py:100] 
+--- Tareas Completadas ---
+03:29:35 PM:INFO [MainApp.py:102] 
+            Id Tarea: 5,
+            Descripción: Presentar informe python,
+            Fecha Límite: 2025-06-23,
+            Estado: completada
+        
+03:29:35 PM:INFO [MainApp.py:103] --------------------------
+03:29:53 PM:DEBUG [TipoTarea.py:120] Tarea actualizada: 
+            Id Tarea: 8,
+            Descripción: Hacer proyecto integrador python,
+            Fecha Límite: 2025-06-30,
+            Estado: completada
+        
+03:29:53 PM:INFO [MainApp.py:113] Tarea con ID 8 marcada como completada.
+03:30:14 PM:DEBUG [TipoTarea.py:145] Tarea eliminada: 
+            Id Tarea: 5,
+            Descripción: None,
+            Fecha Límite: None,
+            Estado: None
+        
+03:30:14 PM:INFO [MainApp.py:125] Tarea con ID 5 eliminada correctamente
+03:30:29 PM:INFO [MainApp.py:131] ¡Chau!
